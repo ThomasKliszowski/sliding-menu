@@ -1,0 +1,7 @@
+.sliding-menu {
+  width: 250px;
+  background: red;
+}
+.sliding-menu-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
