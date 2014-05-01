@@ -48,16 +48,12 @@
   SlidingMenu.prototype.wrapWithTransitions = function(fnc){
     // Wrap fnc function passed in parameters by transitions
     var self = this;
-
-    function transition(property){
-      if(property === undefined) property = self.options.direction;
-      return property + ' ' + self.options.transitionDuration + ' ease-in-out';
-    }
+    var transition = 'all ' + self.options.transitionDuration + ' ease-in-out';
 
     $('body').delay(0).queue(function(){
-      setTransition($('body'), transition());
-      setTransition(self.menu, transition());
-      setTransition(self.overlay, transition('opacity'));
+      setTransition($('body'), transition);
+      setTransition(self.menu, transition);
+      setTransition(self.overlay, transition);
       $(this).dequeue();
     }).delay(50).queue(function(){
       fnc();
