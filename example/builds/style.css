@@ -1,0 +1,181 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+.sliding-menu {
+  width: 250px;
+  background: red;
+}
+.sliding-menu-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+body {
+  background: #DDDDDD;
+  font-family: Lato;
+  font-weight: 300;
+  color: #333;
+}
+.sliding-menu-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background: #333;
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22example%2Fless%2Freset.less%22%2C%22src%2Fjquery.sliding-menu.less%22%2C%22example%2Fless%2Fstyle.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3B%3B%3B%3B%3BAAQA%3BAAAM%3BAAAM%3BAAAK%3BAAAM%3BAAAQ%3BAAC%2FB%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAAAG%3BAAAY%3BAACvC%3BAAAM%3BAAAS%3BAAAM%3BAACrB%3BAAAK%3BAAAK%3BAAAI%3BAAAK%3BAAAK%3BAAAK%3BAAAG%3BAAChC%3BAAAO%3BAAAQ%3BAAAK%3BAAAK%3BAACzB%3BAAAG%3BAACH%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAAAI%3BAACpB%3BAAAU%3BAAAM%3BAAAO%3BAACvB%3BAAAO%3BAAAS%3BAAAO%3BAAAO%3BAAAO%3BAAAI%3BAAAI%3BAAC7C%3BAAAS%3BAAAO%3BAAAQ%3BAAAS%3BAAAY%3BAAC7C%3BAAAQ%3BAAAQ%3BAAAQ%3BAAAM%3BAAAK%3BAAAS%3BAAC5C%3BAAAM%3BAAAM%3BAAAO%3BEACf%2CSAAA%3BEACA%2CUAAA%3BEACA%2CSAAA%3BEACA%2CUAAA%3BEACA%2CeAAA%3BEACA%2CwBAAA%3BEACA%2CuBAAA%3B%3BAAGJ%3BEACI%2CcAAA%3B%3BAAGJ%3BAAAQ%3BAAAM%3BAAAQ%3BAAAW%3BAACjC%3BAAAO%3BAAAO%3BAAAO%3BAAAK%3BAAAI%3BEAC1B%2CcAAA%3B%3BAAGJ%2CGAAI%3BEACA%2CgBAAA%3B%3BAAGJ%3BAAAY%3BEACR%2CYAAA%3B%3BAAGJ%2CUAAU%3BAAAS%2CUAAU%3BAAC7B%2CCAAC%3BAAAS%2CCAAC%3BEACP%2CSAAQ%2CEAAR%3BEACA%2CaAAA%3B%3BAAGJ%3BEACI%2CSAAA%3BEACA%2CUAAA%3BEACA%2CeAAA%3BEACA%2CwBAAA%3BEACA%2CuBAAA%3B%3B%3BAAIJ%3BEACI%2CsBAAA%3BEACA%2CWAAA%3BEACA%2CqBAAA%3B%3B%3BAAIJ%3BEACI%2CsBAAA%3BEACA%2CWAAA%3BEACA%2CkBAAA%3BEACA%2CiBAAA%3B%3BAAGJ%3BEACI%2C6BAAA%3B%3BAAGJ%2CIAAI%3BAAAS%2CGAAG%3BEACZ%2CyBAAA%3BEACA%2CYAAA%3B%3BAAGJ%3BEACI%2CyBAAA%3BEACA%2CiBAAA%3B%3B%3BAAIJ%3BEACI%2CcAAA%3BEACA%2CWAAA%3BEACA%2CSAAA%3BEACA%2C6BAAA%3BEACA%2CaAAA%3BEACA%2CUAAA%3B%3BAAGJ%3BAAAO%3BEACH%2CsBAAA%3B%3BACpGJ%3BEACE%2CYAAA%3BEACA%2CeAAA%3B%3BAAGF%3BEACE%2C8BAAA%3B%3BACFF%3BEACE%2CmBAAA%3BEACA%2CiBAAA%3BEACA%2CgBAAA%3BEACA%2CWAAA%3B%3BAAGF%3BEAGE%2CkBAAA%3BEACA%2CSAAA%3BEACA%2CUAAA%3BEACA%2CWAAA%3BEACA%2CYAAA%3BEAEA%2CgBAAA%22%7D */
