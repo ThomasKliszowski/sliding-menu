@@ -70,6 +70,8 @@
   };
 
   SlidingMenu.prototype.open = function(){
+    this.state = 'open';
+
     // Slide the body
     var self = this;
     $('body').clearQueue().queue(function(){
@@ -96,6 +98,9 @@
   };
 
   SlidingMenu.prototype.close = function(){
+    if(this.state != 'open') return;
+    this.state = 'close';
+
     var self = this;
     this.wrapWithTransitions(function(){
       // Animate to the close state
