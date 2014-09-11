@@ -1,4 +1,6 @@
 (function(jQuery){
+  var $ = jQuery;
+
   function setTransition(node, value){
     $(node).css({
       WebkitTransition : value,
