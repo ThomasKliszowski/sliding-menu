@@ -38,6 +38,18 @@ module.exports = function(grunt) {
     },
     concat: {
       dist: {
+        options: {
+          banner: ''.concat(
+            '/*!\n',
+            ' * Sliding Menu jQuery plugin v' + grunt.file.read('VERSION.txt') + '\n',
+            ' * https://github.com/ThomasKliszowski/sliding-menu\n',
+            ' *\n',
+            ' * Released under the MIT license\n',
+            ' *\n',
+            ' * Date: ' + grunt.template.today('isoDateTime') + '\n',
+            ' */\n'
+          )
+        },
         files: {
           'dist/<%= app.name %>.js': [
             'bower_components/transitionEnd/transition-end.min.js',
@@ -47,6 +59,9 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
+      options: {
+        preserveComments: 'some'
+      },
       dist: {
         files: {
           "dist/<%= app.name %>.min.js": "dist/<%= app.name %>.js"
