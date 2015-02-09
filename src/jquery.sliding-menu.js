@@ -110,7 +110,7 @@
       $('body').css(self.options.direction, '0px');
       self.menu.css(self.options.direction, (-self.menu.width()) + 'px');
     });
-    $('body').queue(function(){
+    $('body').queue(function(dequeue){
       // Detach overlay and menu from body
       self.menu.detach();
       self.overlay.detach();
@@ -123,6 +123,8 @@
       $('body').css(self.options.direction, '');
       self.menu.css(self.options.direction, '');
       self.overlay.css('opacity', '');
+
+      dequeue();
     });
   };
 
